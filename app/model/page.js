@@ -20,7 +20,7 @@ export default function Scene() {
                 <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow>
                     <meshStandardMaterial />
                 </Circle>
-                <OrbitControls target={[0, 1, 0]} />
+                <OrbitControls autoRotate target={[0, 1, 0]} />
                 <axesHelper args={[5]} />
                 <Stats />
             </Canvas>

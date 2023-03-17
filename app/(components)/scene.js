@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 export default function Scene({}) {
-    const gltf = useLoader(GLTFLoader, 'models/a.gltf')
+    const gltf = useLoader(GLTFLoader, './models/a.gltf')
     return (
         <>
             <Link href="/" className='object-right'> back to main</Link>
@@ -14,6 +14,7 @@ export default function Scene({}) {
                 <directionalLight position={[3.3, 1.0, 4.4]} castShadow />
                 <primitive
                     object={gltf.scene}
+                    position={[0, 1, 0]}
                     children-0-castShadow
                 />
                 <Circle args={[10]} rotation-x={-Math.PI / 2} receiveShadow>

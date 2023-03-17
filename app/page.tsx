@@ -1,7 +1,9 @@
-import Loading from './loading';
-import { Navbar } from './navbar';
-import Link from 'next/link';
+import { Modal } from './(components)/modal';
 import Scene from './model/page'
+
+import { Loading } from './(components)/loading';
+import { Navbar } from './(components)/navbar';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Home',
